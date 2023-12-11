@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,14 +9,8 @@ body {
 
 .product {
   border: 5px solid black;
-  margin: 50px auto;
-  width: 820px;
-}
-
-.product-img {
-  width: 30%;
-  height: auto;
-  margin-bottom: 10px;
+  margin: 100px;
+  width: 900px;
 }
 
 .add-cart {
@@ -53,7 +48,7 @@ body {
 }
 
 .details-title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .price {
@@ -62,10 +57,10 @@ body {
 }
 
 .shipping {
-  margin-bottom: 10px;
   color: grey;
   text-transform: uppercase;
   font-size: 12px;
+  align-self: center;
 }
 
 .details-list {
@@ -80,16 +75,14 @@ body {
 .more-info {
   display: inline-block;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-ul {
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
+.details-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 a.more-info:hover {
@@ -108,10 +101,6 @@ a.more-info:hover {
   color: black;
   font-weight: bold;
   background-color: white;
-}
-
-.colors {
-  margin-bottom: 10px;
 }
 
 .color {
@@ -144,4 +133,27 @@ a.more-info:hover {
 
 .color-yellow {
   background-color: yellow;
+}
+ul {
+  list-style-position: inside;
+}
+.mid-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mid-part1 {
+  flex: 0 0 auto;
+  height: 250px;
+}
+.mid-part2,
+.mid-part3 {
+  flex: 0 0 280px;
+  margin-top: 10px;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
